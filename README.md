@@ -8,7 +8,7 @@ The goal is to demonstrate hands-on cloud engineering and data analytics skills 
 ---
 
 ## Architecture  
-<img src="my_0architecture_diagram.png" alt="Pipeline Diagram" width="700"/>
+![Pipeline Diagram](my_0architecture_diagram.png)
 
 
 ### Key Components  
@@ -16,7 +16,7 @@ The goal is to demonstrate hands-on cloud engineering and data analytics skills 
 |-------------------|------------------------------------------|  
 | EventBridge       | Weekly cron trigger                      |  
 | Step Functions    | Orchestrates data workflow               |  
-| Lambda            | Extract,Transform,Load |  
+| Lambda            | Extract,Transform,Load                   |  
 | S3 + VPC Endpoint | Secure intermediate storage              |  
 | RDS (MySQL)       | Structured data storage                  |  
 | EC2 (Metabase)    | Dashboard hosting                        |  
@@ -39,12 +39,12 @@ For detailed documentation, please refer to the PDF.
 ---
 
 ## Data Flow  
-<img src="SEQUENCE_DIAGRAM.jpg" alt="Process Steps" width="900"/>  
-1. **Trigger**: Weekly EventBridge cron  
-2. **Extract**: Mockaroo API   
-3. **Transform**: Step Functions workflow → Lambda → S3
-4. **Load**: Lambda → RDS (private subnet)  
-5. **Visualize**: Metabase dashboards  
+![Pipeline Diagram](my_architecture_diagram.png)
+- **Trigger**: Weekly EventBridge cron
+-  **Extract**: Mockaroo API   
+- **Transform**: Step Functions workflow → Lambda → S3
+- **Load**: Lambda → RDS (private subnet)  
+- **Visualize**: Metabase dashboards  
 
 
 By integrating serverless architecture and secure VPC networking, this design delivers a scalable, cost-effective, and maintainable data pipeline. The final result is an automatically updated, interactive dashboard providing fresh data insights every Monday without manual intervention.
