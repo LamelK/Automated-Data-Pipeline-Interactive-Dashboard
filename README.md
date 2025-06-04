@@ -39,7 +39,8 @@ For detailed documentation, please refer to the PDF.
 ---
 
 ## Data Flow  
-![Pipeline Diagram](my_architecture_diagram.png)
+<img src="SEQUENCE%20DIAGRAM.jpg" alt="Sequence Diagram" width="700"/>
+
 - **Trigger**: Weekly EventBridge cron
 -  **Extract**: Mockaroo API   
 - **Transform**: Step Functions workflow → Lambda → S3
