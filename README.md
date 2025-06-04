@@ -8,7 +8,7 @@ The goal is to demonstrate hands-on cloud engineering and data analytics skills 
 ---
 
 ## Architecture  
-![Pipeline Diagram](my_0architecture_diagram.png)
+![Pipeline Diagram](my architecture diagram.png)
 
 
 ### Key Components  
