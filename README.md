@@ -1,4 +1,4 @@
-# Automated-Data-Pipeline-Interactive-Dashboard# Automated Data Pipeline with Secure Dashboard Access  
+# __Automated-Data-Pipeline-Interactive-Dashboard__
 
 ## Overview  
 This project automates the process of collecting, processing, and visualizing data using AWS cloud services.The pipeline efficiently ingests raw data, performs ETL (Extract, Transform, Load) operations, and creates interactive dashboards for data-driven insights 
