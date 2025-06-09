@@ -1,4 +1,4 @@
-# __Cloud ETL & Interactive Dashboard__
+# Automated-Data-Pipeline-Interactive-Dashboard# Automated Data Pipeline with Secure Dashboard Access  
 
 ## Overview  
 This project automates the process of collecting, processing, and visualizing data using AWS cloud services.The pipeline efficiently ingests raw data, performs ETL (Extract, Transform, Load) operations, and creates interactive dashboards for data-driven insights 
@@ -8,7 +8,7 @@ The goal is to demonstrate hands-on cloud engineering and data analytics skills 
 ---
 
 ## Architecture  
-<img src="my%20architecture%20diagram.png" alt="Pipeline Diagram" width="700"/>
+![Pipeline Diagram](architecture_diagram.png)
 
 
 ### Key Components  
@@ -16,7 +16,7 @@ The goal is to demonstrate hands-on cloud engineering and data analytics skills 
 |-------------------|------------------------------------------|  
 | EventBridge       | Weekly cron trigger                      |  
 | Step Functions    | Orchestrates data workflow               |  
-| Lambda            | Extract,Transform,Load                   |  
+| Lambda            | Extract,Transform,Load |  
 | S3 + VPC Endpoint | Secure intermediate storage              |  
 | RDS (MySQL)       | Structured data storage                  |  
 | EC2 (Metabase)    | Dashboard hosting                        |  
@@ -39,10 +39,10 @@ For detailed documentation, please refer to the PDF.
 ---
 
 ## Data Flow  
-<img src="SEQUENCE%20DIAGRAM.jpg" alt="Sequence Diagram" width="700"/>
+![Process Steps](sequence_diagram.png)
 
-- **Trigger**: Weekly EventBridge cron
--  **Extract**: Mockaroo API   
+- **Trigger**: Weekly EventBridge cron  
+- **Extract**: Mockaroo API   
 - **Transform**: Step Functions workflow → Lambda → S3
 - **Load**: Lambda → RDS (private subnet)  
 - **Visualize**: Metabase dashboards  
