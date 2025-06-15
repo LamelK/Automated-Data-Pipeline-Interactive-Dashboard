@@ -44,8 +44,8 @@ For detailed documentation, please refer to the PDF.
 - **Trigger**: Weekly EventBridge cron  
 - **Extract**: Mockaroo API   
 - **Transform**: Step Functions workflow → Lambda → S3
-- **Load**: Lambda → RDS (private subnet)  
-- **Visualize**: Metabase dashboards  
+- **Load**:S3 → Lambda → RDS   
+- **Visualize**: RDS → Metabase dashboards  
 
 
 By integrating serverless architecture and secure VPC networking, this design delivers a scalable, cost-effective, and maintainable data pipeline. The final result is an automatically updated, interactive dashboard providing fresh data insights every Monday without manual intervention.
