@@ -8,6 +8,9 @@ The goal is to demonstrate hands-on cloud engineering and data analytics skills 
 ---
 
 ## Architecture  
+
+This architecture addresses a common business challenge: automating the end-to-end process of ingesting raw data, transforming it, and making it available for business intelligence and reporting. Specifically, it outlines a serverless and highly scalable solution on AWS to process data, store it in a relational database, and then power a BI application for user visualization.
+
 ![Pipeline Diagram](architecture_diagram.png)
 
 
