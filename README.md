@@ -37,7 +37,7 @@ This application requires me to create a user account for you before you can acc
 ---
 
 ## Technical Documentation  
-For detailed documentation, please refer to the PDF.
+For detailed documentation, please download to the PDF(AWS_DataPipeline_Documentation).
 
 ---
 
